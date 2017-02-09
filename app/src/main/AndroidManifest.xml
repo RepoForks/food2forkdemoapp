@@ -21,6 +21,10 @@
         <activity
             android:name="com.food2fork.demoapp.ui.activity.DetailActivity"/>
 
+        <activity
+            android:name="com.food2fork.demoapp.ui.activity.WebviewActivity"
+            android:theme="@style/AppTheme.FullScreen"/>
+
     </application>
 
 </manifest>

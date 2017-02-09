@@ -125,6 +125,9 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
 
     private void openWebURL(String url) {
         // open webview
+        Intent intent = new Intent(this, WebviewActivity.class);
+        intent.putExtra("webURL", url);
+        startActivity(intent, null);
     }
 
 }
