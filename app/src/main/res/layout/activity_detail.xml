@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/details_image_height"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                android:layout_margin="@dimen/screen_margin_normal"
+                android:id="@+id/details_image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:paddingLeft="@dimen/screen_margin_large"
+                android:textColor="@android:color/black"
+                android:id="@+id/details_ingredients_title"
+                android:text="@string/details_ingredients"
+                android:padding="@dimen/screen_margin_small" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/details_ingredients_container"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:paddingLeft="@dimen/screen_margin_large"
+                android:textColor="@android:color/black"
+                android:id="@+id/details_info"
+                android:text="@string/details_info"
+                android:padding="@dimen/screen_margin_small" />
+
+            <Button
+                android:text="@string/details_btn_view_instruction_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:id="@+id/details_btn_instructions"
+                style="@style/Button.Blue" />
+
+            <Button
+                android:text="@string/details_btn_view_original_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:id="@+id/details_btn_view_original"
+                style="@style/Button.Blue" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/details_bottom_container">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/details_publisher_name"
+                    android:paddingLeft="@dimen/screen_margin_normal"
+                    android:layout_weight="1"
+                    android:gravity="bottom|left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/details_social_rank"
+                    android:paddingRight="@dimen/screen_margin_normal"
+                    android:layout_weight="1"
+                    android:gravity="bottom|end" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

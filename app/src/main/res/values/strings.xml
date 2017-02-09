@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Food2fork Demo</string>
+    <string name="search_title">Search Term</string>
+    <string name="back_title">Back</string>
+    <string name="no_results">Sorry, we couldn\'t find any recipes, please try again..</string>
+    <string name="error_text">An Unexpected Error Occurred</string>
+
+    <string name="details_ingredients">INGREDIENTS</string>
+    <string name="details_info">INFO</string>
+    <string name="details_btn_view_instruction_title">View instructions</string>
+    <string name="details_btn_view_original_title">View Original</string>
+    <string name="details_social_rank">Social rank:</string>
+</resources>

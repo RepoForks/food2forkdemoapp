@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_dimens_xlarge">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recipesItemContainer">
+
+        <ImageView
+            android:layout_width="@dimen/view_dimens_large"
+            android:layout_height="@dimen/view_dimens_large"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/icon"
+            android:layout_margin="@dimen/screen_margin_normal" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recipesTitle"
+            android:layout_toLeftOf="@+id/chevron"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_centerVertical="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_size_large" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/chevron_right"
+            android:layout_alignTop="@+id/icon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/chevron"
+            android:layout_margin="@dimen/screen_margin_normal" />
+    </RelativeLayout>
+</LinearLayout>
