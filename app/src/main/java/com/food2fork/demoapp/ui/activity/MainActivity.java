@@ -1,6 +1,7 @@
 package com.food2fork.demoapp.ui.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.MenuItemCompat;
@@ -127,5 +128,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     @Override
     public void onRecipesClicked(SearchRecipeItem item) {
         // open details
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra("RecipeId", item.getRecipeId());
+        startActivity(intent, null);
     }
 }
